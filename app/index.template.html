@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codyssey Workstation</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell-card">
+      <p class="eyebrow">AI/SW Development Workstation</p>
+      <h1>Containerized Web Server</h1>
+      <p class="message">${APP_MESSAGE}</p>
+      <dl class="facts">
+        <div>
+          <dt>Mode</dt>
+          <dd>${APP_MODE}</dd>
+        </div>
+        <div>
+          <dt>Port</dt>
+          <dd>${APP_PORT}</dd>
+        </div>
+      </dl>
+      <p class="caption">This page is rendered by a custom Docker image built from nginx:1.27-alpine.</p>
+    </main>
+  </body>
+</html>

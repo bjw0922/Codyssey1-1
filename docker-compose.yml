@@ -1,0 +1,25 @@
+services:
+  web:
+    build:
+      context: .
+    image: codyssey-workstation-web:1.0
+    container_name: compose-web
+    environment:
+      APP_MODE: ${APP_MODE:-compose-demo}
+      APP_MESSAGE: ${APP_MESSAGE:-Served from Docker Compose}
+      APP_PORT: 80
+    ports:
+      - "${WEB_PORT:-8090}:80"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:80/ >/dev/null || exit 1"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+
+  inspector:
+    image: busybox:1.36
+    container_name: compose-inspector
+    depends_on:
+      web:
+        condition: service_healthy
+    command: ["sh", "-c", "wget -qO- http://web:80/ | sed -n '1,12p'; sleep 600"]
