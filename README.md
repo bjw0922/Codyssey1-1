@@ -68,7 +68,7 @@
 - [x] 보너스: Compose 멀티 컨테이너 통신
 - [x] 보너스: Compose `up/down/ps/logs`
 - [x] 보너스: Compose 환경 변수 주입
-- [ ] VSCode GitHub 로그인 화면 캡처
+- [x] VSCode GitHub 로그인 화면 캡처
 
 `curl` 응답으로 포트 매핑을 검증했기 때문에 브라우저 스크린샷은 필수는 아니지만, 제출 규칙상 주소창 스크린샷이 필요하면 [docs/evidence/README.md](docs/evidence/README.md)에 추가하면 됩니다.  
 VSCode GitHub 로그인/연동 화면은 터미널 에이전트가 직접 캡처할 수 없어 수동 첨부가 필요합니다.
