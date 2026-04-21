@@ -70,9 +70,6 @@
 - [x] 보너스: Compose 환경 변수 주입
 - [x] VSCode GitHub 로그인 화면 캡처
 
-`curl` 응답으로 포트 매핑을 검증했기 때문에 브라우저 스크린샷은 필수는 아니지만, 제출 규칙상 주소창 스크린샷이 필요하면 [docs/evidence/README.md](docs/evidence/README.md)에 추가하면 됩니다.  
-VSCode GitHub 로그인/연동 화면은 터미널 에이전트가 직접 캡처할 수 없어 수동 첨부가 필요합니다.
-
 ## 5. 검증 방법과 결과 위치
 
 | 검증 대상 | 사용한 명령 | 결과 위치 |
@@ -192,13 +189,7 @@ VSCode GitHub 로그인/연동 화면은 터미널 에이전트가 직접 캡처
   - 권한 상승된 Docker 명령으로 실습을 이어갔다.
   - 실제 제출 환경에서는 사용자가 자신의 터미널에서 동일 명령을 실행하면 된다.
 
-## 9. 제출 전 수동 확인 항목
-
-1. VSCode에서 GitHub 로그인 및 저장소 연동 화면을 캡처해 [docs/evidence/README.md](docs/evidence/README.md) 안내에 따라 첨부한다.
-2. 평가 기준이 "브라우저 주소창 캡처"를 요구하면 `http://localhost:8088` 또는 `http://localhost:8091` 화면을 캡처해 함께 첨부한다.
-3. 커밋 전 민감정보가 없는지 다시 확인한다.
-
-## 10. 바로 확인할 파일
+## 9. 바로 확인할 파일
 
 - 터미널 로그: [docs/logs/terminal.md](docs/logs/terminal.md)
 - Docker 로그: [docs/logs/docker.md](docs/logs/docker.md)
