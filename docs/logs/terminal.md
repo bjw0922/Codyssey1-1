@@ -83,3 +83,24 @@ $ ls -l labs/terminal-lab/permission-file.txt
 $ ls -ld labs/terminal-lab/secure-dir
 drwxr-xr-x  2 <local-user>  staff  64 Apr 19 04:18 labs/terminal-lab/secure-dir
 ```
+
+## 5. 리스트 
+
+```bash
+bwldnjsdl86588658@c6r9s7 Codyssey1-1-main % git config --list
+
+credential.helper=osxkeychain
+user.name=Codyssey1-1
+user.email=bwldnjsdl8658@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=https://github.com/bjw0922/Codyssey1-1.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+branch.main.vscode-merge-base=origin/main
+```
